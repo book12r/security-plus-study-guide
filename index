@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA Security+ Study Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CompTIA Security+ SY0-701 Study Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#day1">Day 1: Attacks & Vulnerabilities</a></li>
+                <li><a href="#day2">Day 2: Network Security</a></li>
+                <li><a href="#day3">Day 3: Identity & Access Management</a></li>
+                <li><a href="#day4">Day 4: Cryptography</a></li>
+                <li><a href="#day5">Day 5: Risk Management</a></li>
+                <li><a href="#day6">Day 6: Incident Response</a></li>
+                <li><a href="#day7">Day 7: Application Security</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Day 1 Section -->
+        <section id="day1">
+            <h2>Day 1: Attacks & Vulnerabilities</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Common Threat Vectors -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RR2CTxzj8rM?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Phishing -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6kzbmLvBdyY?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/112251325/malware-flash-cards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz1">
+                <p>1. What is a common type of malware?</p>
+                <input type="radio" name="q1" value="correct"> Virus<br>
+                <input type="radio" name="q1" value="wrong"> Firewall<br><br>
+
+                <p>2. Which attack is commonly associated with social engineering?</p>
+                <input type="radio" name="q2" value="correct"> Phishing<br>
+                <input type="radio" name="q2" value="wrong"> DDoS<br><br>
+
+                <button type="button" onclick="checkQuiz1()">Check Answers</button>
+            </form>
+            <p id="result1"></p>
+        </section>
+
+        <!-- Day 2 Section -->
+        <section id="day2">
+            <h2>Day 2: Network Security</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Firewall Types -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8IG3aOdrji8?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Secure Communication -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qmecNLyKFWk?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/482214376/network-security-flash-cards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz2">
+                <p>1. What is a firewall used for?</p>
+                <input type="radio" name="q1" value="correct"> Blocking unauthorized traffic<br>
+                <input type="radio" name="q1" value="wrong"> Allowing all traffic<br><br>
+
+                <p>2. What does a VPN do?</p>
+                <input type="radio" name="q2" value="correct"> Secure remote access<br>
+                <input type="radio" name="q2" value="wrong"> Block malware<br><br>
+
+                <button type="button" onclick="checkQuiz2()">Check Answers</button>
+            </form>
+            <p id="result2"></p>
+        </section>
+
+        <!-- Day 3 Section -->
+        <section id="day3">
+            <h2>Day 3: Identity & Access Management (IAM)</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Authentication, Authorization, and Accounting -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1i9OsDk3LPI?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Multifactor Authentication -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_sESl5nJqx4?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/iam-flashcards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz3">
+                <p>1. What does RBAC stand for?</p>
+                <input type="radio" name="q1" value="correct"> Role-Based Access Control<br>
+                <input type="radio" name="q1" value="wrong"> Rule-Based Access Control<br><br>
+
+                <p>2. What is MFA?</p>
+                <input type="radio" name="q2" value="correct"> Multi-Factor Authentication<br>
+                <input type="radio" name="q2" value="wrong"> Manual File Access<br><br>
+
+                <button type="button" onclick="checkQuiz3()">Check Answers</button>
+            </form>
+            <p id="result3"></p>
+        </section>
+
+        <!-- Day 4 Section -->
+        <section id="day4">
+            <h2>Day 4: Cryptography</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Public Key Infrastructure -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bv7tbASUxGk?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Encrypting Data -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/atfu6Zn7axY?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/crypto-flashcards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz4">
+                <p>1. What is asymmetric encryption?</p>
+                <input type="radio" name="q1" value="correct"> Uses different keys for encryption and decryption<br>
+                <input type="radio" name="q1" value="wrong"> Uses the same key for both<br><br>
+
+                <button type="button" onclick="checkQuiz4()">Check Answers</button>
+            </form>
+            <p id="result4"></p>
+        </section>
+
+        <!-- Day 5 Section -->
+        <section id="day5">
+            <h2>Day 5: Risk Management</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Risk Management Strategies -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WzHpnSWnHbc?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Business Impact Analysis -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EzOGc1UK98w?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/risk-flashcards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz5">
+                <p>1. What is risk mitigation?</p>
+                <input type="radio" name="q1" value="correct"> Reducing the impact or likelihood of a risk<br>
+                <input type="radio" name="q1" value="wrong"> Ignoring the risk<br><br>
+
+                <button type="button" onclick="checkQuiz5()">Check Answers</button>
+            </form>
+            <p id="result5"></p>
+        </section>
+
+        <!-- Day 6 Section -->
+        <section id="day6">
+            <h2>Day 6: Incident Response</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: Incident Response -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K4OyeUV1tK0?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Incident Planning -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rXxfLgJOTGQ?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/incident-flashcards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz6">
+                <p>1. What are the phases of incident response?</p>
+                <input type="radio" name="q1" value="correct"> Identification, Containment, Eradication, Recovery<br>
+                <input type="radio" name="q1" value="wrong"> Detection, Response, Recovery, Reporting<br><br>
+
+                <button type="button" onclick="checkQuiz6()">Check Answers</button>
+            </form>
+            <p id="result6"></p>
+        </section>
+
+        <!-- Day 7 Section -->
+        <section id="day7">
+            <h2>Day 7: Application Security</h2>
+            <h3>Video Lessons</h3>
+            <!-- Video: OWASP Top 10 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cjbvxo7P0aw?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+            <!-- Video: Application Security -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aDktyDfoHgk?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv" frameborder="0" allowfullscreen></iframe>
+
+            <h3>Flashcards</h3>
+            <iframe src="https://quizlet.com/application-flashcards/embed" height="400" width="100%"></iframe>
+
+            <h3>Quiz</h3>
+            <form id="quiz7">
+                <p>1. What is Cross-site Scripting (XSS)?</p>
+                <input type="radio" name="q1" value="correct"> A vulnerability that allows attackers to inject malicious scripts<br>
+                <input type="radio" name="q1" value="wrong"> An encryption method<br><br>
+
+                <button type="button" onclick="checkQuiz7()">Check Answers</button>
+            </form>
+            <p id="result7"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
