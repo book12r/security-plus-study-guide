@@ -3,196 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompTIA Security+ Study Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>CompTIA Security+ Practice Quiz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .question-container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        .explanation {
+            margin-top: 10px;
+            display: none;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .question-number {
+            font-weight: bold;
+            color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>CompTIA Security+ SY0-701 Study Guide</h1>
-        <nav>
-            <ul>
-                <li><a href="#day1">Day 1: Attacks & Vulnerabilities</a></li>
-                <li><a href="#day2">Day 2: Network Security</a></li>
-                <li><a href="#day3">Day 3: Identity & Access Management</a></li>
-                <li><a href="#day4">Day 4: Cryptography</a></li>
-                <li><a href="#day5">Day 5: Risk Management</a></li>
-                <li><a href="#day6">Day 6: Incident Response</a></li>
-                <li><a href="#day7">Day 7: Application Security</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Day 1 Section: Attacks & Vulnerabilities -->
-        <section id="day1">
-            <h2>Day 1: Attacks & Vulnerabilities</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.professormesser.com/security-plus/sy0-601/sy0-601-training-course/threats-attacks-and-vulnerabilities/" target="_blank">Professor Messer - Attacks, Threats, and Vulnerabilities</a><br>
-            <a href="https://www.youtube.com/watch?v=MZxDquHSDNA" target="_blank">YouTube - Attacks, Threats, and Vulnerabilities (Part 1)</a><br>
-            <a href="https://www.pluralsight.com/courses/attacks-threats-vulnerabilities-comptia-security-plus" target="_blank">Pluralsight - Attacks & Vulnerabilities</a>
+<header>
+    <h1>CompTIA Security+ Practice Questions (SY0-601)</h1>
+</header>
 
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/514394742/threats-attacks-and-vulnerabilities-security-flash-cards/embed" height="400" width="100%"></iframe>
+<main>
 
-            <h3>Quiz</h3>
-            <form id="quiz1">
-                <p>1. What is a common type of malware?</p>
-                <input type="radio" name="q1" value="Virus"> Virus<br>
-                <input type="radio" name="q1" value="Firewall"> Firewall<br>
-                <p id="result1"></p>
+    <!-- Question 1 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 1:</span> What is a brute-force attack?</h2>
+        <form id="question1">
+            <input type="radio" name="q1" value="A"> A coordinated attack to flood a network<br>
+            <input type="radio" name="q1" value="B"> An attempt to guess a password by trying multiple combinations<br>
+            <input type="radio" name="q1" value="C"> An insider threat within an organization<br>
+            <input type="radio" name="q1" value="D"> An attack that exploits a known vulnerability<br>
+            <button type="button" onclick="checkAnswer(1, 'B', 'A brute-force attack tries multiple combinations of usernames or passwords to gain access.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation1"></p>
+    </div>
 
-                <p>2. Which attack is commonly associated with social engineering?</p>
-                <input type="radio" name="q2" value="Phishing"> Phishing<br>
-                <input type="radio" name="q2" value="DDoS"> DDoS<br>
-                <p id="result2"></p>
+    <!-- Question 2 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 2:</span> What is the main purpose of multi-factor authentication (MFA)?</h2>
+        <form id="question2">
+            <input type="radio" name="q2" value="A"> To speed up the login process<br>
+            <input type="radio" name="q2" value="B"> To provide an additional layer of security<br>
+            <input type="radio" name="q2" value="C"> To ensure password complexity<br>
+            <input type="radio" name="q2" value="D"> To reduce the use of strong passwords<br>
+            <button type="button" onclick="checkAnswer(2, 'B', 'MFA adds an extra layer of security by requiring two or more verification factors.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation2"></p>
+    </div>
 
-                <p>3. What is a zero-day vulnerability?</p>
-                <input type="radio" name="q3" value="Unknown vulnerability exploited by attackers"> Unknown vulnerability exploited by attackers<br>
-                <input type="radio" name="q3" value="Outdated software patch"> Outdated software patch<br>
-                <p id="result3"></p>
+    <!-- Question 3 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 3:</span> What does encryption ensure?</h2>
+        <form id="question3">
+            <input type="radio" name="q3" value="A"> Integrity<br>
+            <input type="radio" name="q3" value="B"> Availability<br>
+            <input type="radio" name="q3" value="C"> Confidentiality<br>
+            <input type="radio" name="q3" value="D"> Non-repudiation<br>
+            <button type="button" onclick="checkAnswer(3, 'C', 'Encryption ensures confidentiality, protecting sensitive information from unauthorized access.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation3"></p>
+    </div>
 
-                <button type="button" onclick="checkQuiz1()">Check Answers</button>
-            </form>
-        </section>
+    <!-- Question 4 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 4:</span> Which of the following is a form of social engineering?</h2>
+        <form id="question4">
+            <input type="radio" name="q4" value="A"> Phishing<br>
+            <input type="radio" name="q4" value="B"> Buffer overflow<br>
+            <input type="radio" name="q4" value="C"> DDoS<br>
+            <input type="radio" name="q4" value="D"> Keylogger<br>
+            <button type="button" onclick="checkAnswer(4, 'A', 'Phishing is a common form of social engineering where attackers trick users into revealing sensitive information.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation4"></p>
+    </div>
 
-        <!-- Day 2 Section: Network Security -->
-        <section id="day2">
-            <h2>Day 2: Network Security</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.pearsonitcertification.com/store/comptia-security-sy0-601-complete-video-course-9780136974977" target="_blank">Pearson IT - Network Security</a><br>
-            <a href="https://www.youtube.com/watch?v=_YjfaVVRhFw" target="_blank">YouTube - Network Attacks & Security</a>
+    <!-- Question 5 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 5:</span> What is the purpose of a public key in asymmetric encryption?</h2>
+        <form id="question5">
+            <input type="radio" name="q5" value="A"> To decrypt data<br>
+            <input type="radio" name="q5" value="B"> To sign digital certificates<br>
+            <input type="radio" name="q5" value="C"> To encrypt data<br>
+            <input type="radio" name="q5" value="D"> To perform key exchanges<br>
+            <button type="button" onclick="checkAnswer(5, 'C', 'In asymmetric encryption, the public key is used to encrypt data, while the private key is used to decrypt it.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation5"></p>
+    </div>
 
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/156913900/comptia-security-network-flash-cards/embed" height="400" width="100%"></iframe>
+    <!-- Question 6 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 6:</span> What does a firewall primarily do?</h2>
+        <form id="question6">
+            <input type="radio" name="q6" value="A"> Monitor internet traffic<br>
+            <input type="radio" name="q6" value="B"> Block unauthorized traffic<br>
+            <input type="radio" name="q6" value="C"> Detect phishing attacks<br>
+            <input type="radio" name="q6" value="D"> Ensure password complexity<br>
+            <button type="button" onclick="checkAnswer(6, 'B', 'A firewall’s main function is to block unauthorized traffic and control the flow of data between networks.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation6"></p>
+    </div>
 
-            <h3>Quiz</h3>
-            <form id="quiz2">
-                <p>1. What is the primary function of a firewall?</p>
-                <input type="radio" name="q1" value="Blocking unauthorized traffic"> Blocking unauthorized traffic<br>
-                <input type="radio" name="q1" value="Allowing all traffic"> Allowing all traffic<br>
-                <p id="result2_1"></p>
+    <!-- Question 7 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 7:</span> What is a zero-day vulnerability?</h2>
+        <form id="question7">
+            <input type="radio" name="q7" value="A"> A vulnerability that has already been patched<br>
+            <input type="radio" name="q7" value="B"> A vulnerability exploited before a patch is available<br>
+            <input type="radio" name="q7" value="C"> A vulnerability that is discovered by white-hat hackers<br>
+            <input type="radio" name="q7" value="D"> A vulnerability that exists in every system<br>
+            <button type="button" onclick="checkAnswer(7, 'B', 'A zero-day vulnerability is one that attackers exploit before a patch or fix is available.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation7"></p>
+    </div>
 
-                <p>2. How does a VPN protect remote access?</p>
-                <input type="radio" name="q2" value="Encryption and tunneling"> Encryption and tunneling<br>
-                <input type="radio" name="q2" value="Monitoring all connections"> Monitoring all connections<br>
-                <p id="result2_2"></p>
+    <!-- Question 8 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 8:</span> What is the goal of risk mitigation?</h2>
+        <form id="question8">
+            <input type="radio" name="q8" value="A"> To eliminate all risks<br>
+            <input type="radio" name="q8" value="B"> To reduce the impact or likelihood of risks<br>
+            <input type="radio" name="q8" value="C"> To transfer risks to a third party<br>
+            <input type="radio" name="q8" value="D"> To create more risks<br>
+            <button type="button" onclick="checkAnswer(8, 'B', 'Risk mitigation aims to reduce the impact or likelihood of a risk to an acceptable level.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation8"></p>
+    </div>
 
-                <button type="button" onclick="checkQuiz2()">Check Answers</button>
-            </form>
-        </section>
+    <!-- Question 9 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 9:</span> Which protocol is used for securely transferring files over a network?</h2>
+        <form id="question9">
+            <input type="radio" name="q9" value="A"> FTP<br>
+            <input type="radio" name="q9" value="B"> HTTP<br>
+            <input type="radio" name="q9" value="C"> SFTP<br>
+            <input type="radio" name="q9" value="D"> Telnet<br>
+            <button type="button" onclick="checkAnswer(9, 'C', 'SFTP (Secure File Transfer Protocol) is used for securely transferring files over a network using encryption.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation9"></p>
+    </div>
 
-        <!-- Day 3 Section: Identity & Access Management (IAM) -->
-        <section id="day3">
-            <h2>Day 3: Identity & Access Management (IAM)</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.pluralsight.com/courses/comptia-security-sy0-601-identity-access-management" target="_blank">Pluralsight - Identity & Access Management</a><br>
-            <a href="https://www.oreilly.com/library/view/comptia-security-sy0-601/9780136974977/" target="_blank">O'Reilly - Identity & Access Management</a>
+    <!-- Question 10 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 10:</span> Which security model is based on classification labels?</h2>
+        <form id="question10">
+            <input type="radio" name="q10" value="A"> Bell-LaPadula<br>
+            <input type="radio" name="q10" value="B"> Clark-Wilson<br>
+            <input type="radio" name="q10" value="C"> Biba<br>
+            <input type="radio" name="q10" value="D"> Access Control List<br>
+            <button type="button" onclick="checkAnswer(10, 'A', 'The Bell-LaPadula model focuses on confidentiality using classification labels, such as Top Secret.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation10"></p>
+    </div>
 
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/293394720/comptia-security-access-management-flash-cards/embed" height="400" width="100%"></iframe>
+    <!-- Question 11 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 11:</span> What is the purpose of hashing?</h2>
+        <form id="question11">
+            <input type="radio" name="q11" value="A"> To encrypt data<br>
+            <input type="radio" name="q11" value="B"> To verify data integrity<br>
+            <input type="radio" name="q11" value="C"> To create a VPN tunnel<br>
+            <input type="radio" name="q11" value="D"> To add a digital signature<br>
+            <button type="button" onclick="checkAnswer(11, 'B', 'Hashing is used to verify the integrity of data by ensuring that it hasn\'t been altered.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation11"></p>
+    </div>
 
-            <h3>Quiz</h3>
-            <form id="quiz3">
-                <p>1. What does RBAC stand for?</p>
-                <input type="radio" name="q1" value="Role-Based Access Control"> Role-Based Access Control<br>
-                <input type="radio" name="q1" value="Rule-Based Access Control"> Rule-Based Access Control<br>
-                <p id="result3_1"></p>
+    <!-- Question 12 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 12:</span> Which type of malware replicates itself to spread?</h2>
+        <form id="question12">
+            <input type="radio" name="q12" value="A"> Virus<br>
+            <input type="radio" name="q12" value="B"> Trojan<br>
+            <input type="radio" name="q12" value="C"> Worm<br>
+            <input type="radio" name="q12" value="D"> Spyware<br>
+            <button type="button" onclick="checkAnswer(12, 'C', 'Worms replicate themselves to spread to other systems without needing a host program.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation12"></p>
+    </div>
 
-                <p>2. What is MFA?</p>
-                <input type="radio" name="q2" value="Multi-Factor Authentication"> Multi-Factor Authentication<br>
-                <input type="radio" name="q2" value="Manual File Access"> Manual File Access<br>
-                <p id="result3_2"></p>
+    <!-- Question 13 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 13:</span> Which of the following is a cryptographic algorithm used for encryption?</h2>
+        <form id="question13">
+            <input type="radio" name="q13" value="A"> SHA-1<br>
+            <input type="radio" name="q13" value="B"> AES<br>
+            <input type="radio" name="q13" value="C"> MD5<br>
+            <input type="radio" name="q13" value="D"> HMAC<br>
+            <button type="button" onclick="checkAnswer(13, 'B', 'AES (Advanced Encryption Standard) is a symmetric encryption algorithm used to encrypt data.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation13"></p>
+    </div>
 
-                <button type="button" onclick="checkQuiz3()">Check Answers</button>
-            </form>
-        </section>
+    <!-- Question 14 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 14:</span> What is the purpose of a demilitarized zone (DMZ)?</h2>
+        <form id="question14">
+            <input type="radio" name="q14" value="A"> To protect internal servers<br>
+            <input type="radio" name="q14" value="B"> To encrypt data in transit<br>
+            <input type="radio" name="q14" value="C"> To filter incoming network traffic<br>
+            <input type="radio" name="q14" value="D"> To host services accessible from the internet while protecting internal networks<br>
+            <button type="button" onclick="checkAnswer(14, 'D', 'A DMZ is used to host external-facing services while protecting the internal network from exposure to the internet.')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation14"></p>
+    </div>
 
-        <!-- Day 4 Section: Cryptography -->
-        <section id="day4">
-            <h2>Day 4: Cryptography</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.oreilly.com/library/view/comptia-security-sy0-601/9780136974977/" target="_blank">O'Reilly - Cryptography Concepts</a><br>
-            <a href="https://www.udemy.com/course/comptia-security-certification-sy0-601-the-total-course/" target="_blank">Udemy - Cryptography</a>
+    <!-- Question 15 -->
+    <div class="question-container">
+        <h2><span class="question-number">Question 15:</span> What does a digital signature provide?</h2>
+        <form id="question15">
+            <input type="radio" name="q15" value="A"> Confidentiality<br>
+            <input type="radio" name="q15" value="B"> Integrity and non-repudiation<br>
+            <input type="radio" name="q15" value="C"> Availability<br>
+            <input type="radio" name="q15" value="D"> Encryption<br>
+            <button type="button" onclick="checkAnswer(15, 'B', 'Digital signatures provide integrity (proof that data hasn\'t been altered) and non-repudiation (proof of authorship).')">Check Answer</button>
+        </form>
+        <p class="explanation" id="explanation15"></p>
+    </div>
 
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/785165169/security-sy0-601-cryptography-flash-cards/embed" height="400" width="100%"></iframe>
+    <!-- Continue adding questions from 16 to 50 following the same format -->
 
-            <h3>Quiz</h3>
-            <form id="quiz4">
-                <p>1. What is asymmetric encryption?</p>
-                <input type="radio" name="q1" value="Uses different keys for encryption and decryption"> Uses different keys for encryption and decryption<br>
-                <input type="radio" name="q1" value="Uses the same key for both"> Uses the same key for both<br>
-                <p id="result4_1"></p>
+</main>
 
-                <button type="button" onclick="checkQuiz4()">Check Answers</button>
-            </form>
-        </section>
+<script>
+    function checkAnswer(questionNumber, correctAnswer, explanation) {
+        const form = document.getElementById(`question${questionNumber}`);
+        const selected = form.querySelector('input[name="q' + questionNumber + '"]:checked');
+        const explanationEl = document.getElementById(`explanation${questionNumber}`);
 
-        <!-- Day 5 Section: Risk Management -->
-        <section id="day5">
-            <h2>Day 5: Risk Management</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.udemy.com/course/comptia-security-certification-sy0-601-the-total-course/" target="_blank">Udemy - Risk Management</a><br>
-            <a href="https://www.oreilly.com/library/view/comptia-security-sy0-601/9780136974977/" target="_blank">O'Reilly - Risk Management</a>
+        if (!selected) {
+            explanationEl.textContent = "Please select an answer!";
+            explanationEl.style.color = "orange";
+            explanationEl.style.display = "block";
+            return;
+        }
 
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/608517525/comptia-security-sy0-601-risk-management-flash-cards/embed" height="400" width="100%"></iframe>
+        if (selected.value === correctAnswer) {
+            explanationEl.textContent = "Correct! " + explanation;
+            explanationEl.className = "explanation correct";
+        } else {
+            explanationEl.textContent = "Incorrect. " + explanation;
+            explanationEl.className = "explanation incorrect";
+        }
+        explanationEl.style.display = "block";
+    }
+</script>
 
-            <h3>Quiz</h3>
-            <form id="quiz5">
-                <p>1. What is risk mitigation?</p>
-                <input type="radio" name="q1" value="Reducing the impact or likelihood of a risk"> Reducing the impact or likelihood of a risk<br>
-                <input type="radio" name="q1" value="Ignoring the risk"> Ignoring the risk<br>
-                <p id="result5_1"></p>
-
-                <button type="button" onclick="checkQuiz5()">Check Answers</button>
-            </form>
-        </section>
-
-        <!-- Day 6 Section: Incident Response -->
-        <section id="day6">
-            <h2>Day 6: Incident Response</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.pluralsight.com/courses/comptia-security-sy0-601-incident-response" target="_blank">Pluralsight - Incident Response</a><br>
-            <a href="https://www.oreilly.com/library/view/comptia-security-sy0-601/9780136974977/" target="_blank">O'Reilly - Incident Response</a>
-
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/401122939/comptia-security-sy0-501-incident-response-flash-cards/embed" height="400" width="100%"></iframe>
-
-            <h3>Quiz</h3>
-            <form id="quiz6">
-                <p>1. What are the phases of incident response?</p>
-                <input type="radio" name="q1" value="Identification, Containment, Eradication, Recovery"> Identification, Containment, Eradication, Recovery<br>
-                <input type="radio" name="q1" value="Detection, Response, Recovery, Reporting"> Detection, Response, Recovery, Reporting<br>
-                <p id="result6_1"></p>
-
-                <button type="button" onclick="checkQuiz6()">Check Answers</button>
-            </form>
-        </section>
-
-        <!-- Day 7 Section: Application Security -->
-        <section id="day7">
-            <h2>Day 7: Application Security</h2>
-            <h3>Video Lessons</h3>
-            <a href="https://www.professormesser.com/security-plus/sy0-601/sy0-601-training-course/application-security/" target="_blank">Professor Messer - Application Security</a><br>
-            <a href="https://www.pluralsight.com/courses/comptia-security-sy0-601-application-security" target="_blank">Pluralsight - Application Security</a>
-
-            <h3>Flashcards</h3>
-            <iframe src="https://quizlet.com/538146452/comptia-security-sy0-601-application-security-flash-cards/embed" height="400" width="100%"></iframe>
-
-            <h3>Quiz</h3>
-            <form id="quiz7">
-                <p>1. What is Cross-site Scripting (XSS)?</p>
-                <input type="radio" name="q1" value="A vulnerability that allows attackers to inject malicious scripts"> A vulnerability that allows attackers to inject malicious scripts<br>
-                <input type="radio" name="q1" value="An encryption method"> An encryption method<br>
-                <p id="result7_1"></p>
-
-                <button type="button" onclick="checkQuiz7()">Check Answers</button>
-            </form>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
 
